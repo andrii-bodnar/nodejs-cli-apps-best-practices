@@ -17,6 +17,7 @@ files: [
   {
     "source": "/README.md",
     "translation": "/README_%locale%.md",
+    "content_segmentation": 0,
     "languages_mapping": {
         "locale": {
             "es-ES": "es",
@@ -24,4 +25,14 @@ files: [
         }
     }
   },
+    {
+        "source": "/README_es.md",
+        "translation": "/README_%locale%.md",
+        "content_segmentation": 0,
+    },
+    {
+        "source": "/README_zh-Hans.md",
+        "translation": "/README_%locale%.md",
+        "content_segmentation": 0,
+    },
 ]
