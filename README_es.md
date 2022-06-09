@@ -1,74 +1,74 @@
 <p align="center">
-  <img height="400px" src=".github/node-js-cli-apps-best-practices_es.png">
+  <img src=".github/node-js-cli-apps-best-practices.png" height="400px" />
 </p>
 
 <p align="center">
-  <h1 align="center">Buenas Prácticas para las Aplicaciones CLI en Node.js</h1>
-Aquí encontrarás una colección de buenas prácticas sobre cómo crear aplicaciones de interfaz de línea de comando (CLI) empáticas y fáciles de usar.
+  <h1 align="center">Node.js CLI Apps Best Practices</h1>
+A collection of curated best practices on how to build successful, empathic and user-friendly Node.js Command Line Interface (CLI) applications.
 </p>
 
-### El porqué de la guía
+### Why this guide?
 
-Una CLI difícil y compleja puede desmotivar fácilmente a los usuarios de interactuar con ella. La creación de CLIs amigables requiere atención, detalle y empatía con el usuario con el fin de generar una buena experiencia. Es muy fácil equivocarse.
+A bad CLI can easily discourage users from interacting with it. Building successful CLIs requires attention to detail and empathy for the user in order to create a good user experience. It is very easy to get wrong.
 
-En esta guía he recopilado una lista con las mejores prácticas en distintos enfoques con el objetivo de mejorar la experiencia de usuario a la hora de interactuar con una aplicación CLI.
+In this guide I have compiled a list of best practices across areas of focus which aim to optimize for an ideal user experience when interacting with a CLI application.
 
-### Características:
+### Features:
 
-- ✅ 21 mejores prácticas para crear aplicaciones CLI en Node.js
-- ✅ Leer en un idioma diferente: [🇨🇳](./README_zh-Hans.md), [🇪🇸](./README_es.md) o ayuda a traducirlas a otro idioma: [ [🇩🇪](./README-de.md) , ... ]
-- 🙏 Las contribuciones son bienvenidas
+- ✅ 29 best practices for building successful Node.js CLI applications
+- ✅ Read in a different language: [🇨🇳](./README_zh-Hans.md), [🇪🇸](./README_es.md), or help translate to other languages: [ [🇩🇪](./README-de.md) , ... ]
+- 🙏 Contributions are welcome
 
 <!-- Shields -->
 <p align="center">
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://badgen.net/badge/License/CC BY-SA 4.0/green"/></a>
-<img src="https://badgen.net/badge/Last%20Update/Feb%202020/green" />
+<img src="https://badgen.net/badge/Last%20Update/Jan%202021/green" />
 <a href="https://www.github.com/lirantal/nodejs-cli-apps-best-practices" target="_blank">
   <img src="https://badgen.net/badge/Node.js CLI Apps/Best Practices/purple" style="margin:8px;" alt="Node.js CLI Apps Best Practices"/>
 </a>
 </p>
 
-### Algo más sobre mi
+### Why me?
 
-Hola, Soy [Liran Tal](https://twitter.com/liran_tal) y soy un adicto a la creación de aplicaciones en línea de comandos.
+Hi there, I'm [Liran Tal](https://twitter.com/liran_tal) and I'm addicted to building command line applications.
 
-Algunos de mis trabajos más recientes con la creación de aplicaciones CLI en Node.js incluyen los siguientes proyectos Open Source:
+Some of my recent work, building Node.js CLIs, includes the following Open Source projects:
 
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
   <tr>
      <td align="center">
-      <a href="https://github.com/lirantal/dockly"><img src="https://repository-images.githubusercontent.com/71667498/d5576f00-69cd-11e9-83dd-2139ad967fdc" width="150px;" alt="dockly - Immersive terminal interface for managing docker containers and services"/><br /><sub><b>Dockly</b></sub></a><br/>Interfaz de terminal inmersiva para administrar contenedores y servicios acoplables
+      <a href="https://github.com/lirantal/dockly"><img src="https://repository-images.githubusercontent.com/71667498/d5576f00-69cd-11e9-83dd-2139ad967fdc" width="150px;" alt="dockly - Immersive terminal interface for managing docker containers and services"/><br /><sub><b>Dockly</b></sub></a><br/>Immersive terminal interface for managing docker containers and services
      </td>
      <td align="center">
-      <a href="https://github.com/lirantal/npq"><img src="https://repository-images.githubusercontent.com/114298694/73d29f00-bb7d-11e9-80f5-5f94f25a76b4" width="150px;" alt="npq - safely install packages with npm/yarn by auditing them as part of your install process"/><br /><sub><b>npq</b></sub></a><br/>Instale paquetes de forma segura con npm/yarn auditándolos como parte de su proceso de instalación
+      <a href="https://github.com/lirantal/npq"><img src="https://repository-images.githubusercontent.com/114298694/73d29f00-bb7d-11e9-80f5-5f94f25a76b4" width="150px;" alt="npq - safely install packages with npm/yarn by auditing them as part of your install process"/><br /><sub><b>npq</b></sub></a><br/>safely install packages with npm/yarn by auditing them as part of your install process
      </td>
      <td align="center">
-      <a href="https://github.com/lirantal/lockfile-lint"><img src="https://repository-images.githubusercontent.com/189734318/d2d03200-5bfb-11ea-9eb6-70144dbe2197" width="150px;" alt="lockfile-lint - Lint an npm or yarn lockfile to analyze and detect security issues"/><br /><sub><b>lockfile-lint</b></sub></a><br/>Lint para lockfile de npm o yarn para analizar y detectar problemas de seguridad
+      <a href="https://github.com/lirantal/lockfile-lint"><img src="https://repository-images.githubusercontent.com/189734318/d2d03200-5bfb-11ea-9eb6-70144dbe2197" width="150px;" alt="lockfile-lint - Lint an npm or yarn lockfile to analyze and detect security issues"/><br /><sub><b>lockfile-lint</b></sub></a><br/>Lint an npm or yarn lockfile to analyze and detect security issues
      </td>
      <td align="center">
-      <a href="https://github.com/lirantal/is-website-vulnerable"><img src="https://repository-images.githubusercontent.com/212983914/2d33b500-e84d-11e9-820e-799f368c4c44" width="150px;" alt="is-website-vulnerable - finds publicly known security vulnerabilities in a website's frontend JavaScript libraries"/><br /><sub><b>is-website-vulnerable</b></sub></a><br/>Encuentre vulnerabilidades de seguridad conocidas públicamente en las bibliotecas JavaScript frontend de un sitio web
+      <a href="https://github.com/lirantal/is-website-vulnerable"><img src="https://repository-images.githubusercontent.com/212983914/2d33b500-e84d-11e9-820e-799f368c4c44" width="150px;" alt="is-website-vulnerable - finds publicly known security vulnerabilities in a website's frontend JavaScript libraries"/><br /><sub><b>is-website-vulnerable</b></sub></a><br/>finds publicly known security vulnerabilities in a website's frontend JavaScript libraries
      </td>
   </tr>
 </table>
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 
-### El Equipo ✨
+### The Team ✨
 
-Gracias a estas maravillosas personas ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://blog.vvni.top/"><img src="https://avatars2.githubusercontent.com/u/50414099?v=4" width="100px;" alt=""/><br /><sub><b>Vanilla</b></sub></a><br /><a href="#translation-vvni" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/0x219"><img src="https://avatars2.githubusercontent.com/u/50414099?v=4" width="100px;" alt=""/><br /><sub><b>是你吖小刘</b></sub></a><br /><a href="#translation-vvni" title="Translation">🌍</a></td>
     <td align="center"><a href="https://terkel.com"><img src="https://avatars2.githubusercontent.com/u/2302254?v=4" width="100px;" alt=""/><br /><sub><b>Terkel</b></sub></a><br /><a href="#content-terkelg" title="Content">🖋</a></td>
     <td align="center"><a href="http://jasonkarns.com"><img src="https://avatars2.githubusercontent.com/u/119972?v=4" width="100px;" alt=""/><br /><sub><b>Jason Karns</b></sub></a><br /><a href="#content-jasonkarns" title="Content">🖋</a></td>
     <td align="center"><a href="https://about.me/davesag"><img src="https://avatars0.githubusercontent.com/u/387098?v=4" width="100px;" alt=""/><br /><sub><b>Dave Sag</b></sub></a><br /><a href="#maintenance-davesag" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://josejpr.com"><img src="https://avatars0.githubusercontent.com/u/12954959?v=4" width="100px;" alt=""/><br /><sub><b>José J. (Pepe)</b></sub></a><br /><a href="#translation-JoseJPR" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://josejpr.com"><img src="https://avatars0.githubusercontent.com/u/12954959?v=4" width="100px;" alt=""/><br /><sub><b>José J. Pérez Rivas</b></sub></a><br /><a href="#translation-JoseJPR" title="Translation">🌍</a></td>
     <td align="center"><a href="https://twitter.com/MSuresh100"><img src="https://avatars3.githubusercontent.com/u/12813750?v=4" width="100px;" alt=""/><br /><sub><b>Sureshraj</b></sub></a><br /><a href="#content-m-sureshraj" title="Content">🖋</a></td>
   </tr>
 </table>
@@ -80,296 +80,309 @@ Gracias a estas maravillosas personas ([emoji key](https://allcontributors.org/d
 
 ---
 
-<h3>Contenido</h3>
+<h3>Table of Contents</h3>
 
-- 1 Experiencia en Línea de Comando
-  - 1.1 [Respeta los argumentos POSIX](#11-respect-posix-args)
-  - 1.2 [Crea CLIs empáticos](#12-build-empathic-clis)
-  - 1.3 [Stateful del dato](#13-stateful-data)
-  - 1.4 [Proporcione una experiencia con color](#14-provide-a-colorful-experience)
-  - 1.5 [Interacciones enriquecidas](#15-rich-interactions)
-  - 1.6 [Hipervínculos en todas partes](#16-hyperlinks-everywhere)
-  - 1.7 [Cero configuración](#17-zero-configuration)
-  - 1.8 [Respetar las señales POSIX](#18-respect-posix-signals)
-- 2 Distribución
-  - 2.1 [Prefiera dependencias pequeñas](#21-prefer-a-small-dependency-footprint)
-  - 2.2 [Utilice shrinkwrap, Luke](#22-use-the-shrinkwrap-luke)
-  - 2.3 [Limpieza en los archivos de configuración](#23-cleanup-configuration-files)
-- 3 Interoperabilidad
-  - 3.1 [Aceptar entradas como STDIN](#31-accept-input-as-stdin)
-  - 3.2 [Habilitar una salida estructurada](#32-enable-structured-output)
-  - 3.3 [Etiqueta multiplataforma](#33-cross-platform-etiquette)
-  - 3.4 [Permita anulaciones del entorno](#34-allow-environment-overrides)
-- 4 Accesibilidad
-  - 4.1 [Contenedor para la CLI](#41-containerize-the-cli)
+- 1 Command Line Experience
+  - 1.1 [Respect POSIX args](#11-respect-posix-args)
+  - 1.2 [Build empathic CLIs](#12-build-empathic-clis)
+  - 1.3 [Stateful data](#13-stateful-data)
+  - 1.4 [Provide a colorful experience](#14-provide-a-colorful-experience)
+  - 1.5 [Rich interactions](#15-rich-interactions)
+  - 1.6 [Hyperlinks everywhere](#16-hyperlinks-everywhere)
+  - 1.7 [Zero configuration](#17-zero-configuration)
+  - 1.8 [Respect POSIX signals](#18-respect-posix-signals)
+- 2 Distribution
+  - 2.1 [Prefer a small dependency footprint](#21-prefer-a-small-dependency-footprint)
+  - 2.2 [Use the shrinkwrap, Luke](#22-use-the-shrinkwrap-luke)
+  - 2.3 [Cleanup configuration files](#23-cleanup-configuration-files)
+- 3 Interoperability
+  - 3.1 [Accept input as STDIN](#31-accept-input-as-stdin)
+  - 3.2 [Enable structured output](#32-enable-structured-output)
+  - 3.3 [Cross-platform etiquette](#33-cross-platform-etiquette)
+  - 3.4 [Support configuration precedence](#34-support-configuration-precedence)
+- 4 Accessibility
+  - 4.1 [Containerize the CLI](#41-containerize-the-cli)
   - 4.2 [Graceful degradation](#42-graceful-degradation)
-  - 4.3 [Compatibilidad con versiones de Node.js](#43-nodejs-versions-compatibility)
-  - 4.4 [Shebang para detectar de forma automática el runtime de Node.js](#44-shebang-autodetect-the-nodejs-runtime)
+  - 4.3 [Node.js versions compatibility](#43-nodejs-versions-compatibility)
+  - 4.4 [Shebang autodetect the Node.js runtime](#44-shebang-autodetect-the-nodejs-runtime)
 - 5 Testing
-  - 5.1 [No confíes en los locales](#51-put-no-trust-in-locales)
-- 6 Errores
-  - 6.1 [Errores informativos](#61-informational-errors)
-  - 6.2 [Errores procesados](#62-actionable-errors)
-  - 6.3 [Proporcionar el modo de depuración](#63-provide-debug-mode)
-  - 6.4 [Uso adecuado de los códigos de salida.](#64-proper-use-of-exit-codes)
-  - 6.5 [Informes de errores sin esfuerzo](#65-effortless-bug-reports)
-- 7 Desarrollo
-  - 7.1 [Utilice un objeto bin](#71-use-a-bin-object)
-  - 7.2 [Utilice rutas relativas](#72-use-relative-paths)
-  - 7.3 [Utilice el campo `files`](#73-use-the-files-field)
+  - 5.1 [Put no trust in locales](#51-put-no-trust-in-locales)
+- 6 Errors
+  - 6.1 [Trackable errors](#61-trackable-errors)
+  - 6.2 [Actionable errors](#62-actionable-errors)
+  - 6.3 [Provide debug mode](#63-provide-debug-mode)
+  - 6.4 [Proper use of exit codes](#64-proper-use-of-exit-codes)
+  - 6.5 [Effortless bug reports](#65-effortless-bug-reports)
+- 7 Development
+  - 7.1 [Use a bin object](#71-use-a-bin-object)
+  - 7.2 [Use relative paths](#72-use-relative-paths)
+  - 7.3 [Use the files field](#73-use-the-files-field)
+- 8 Analytics
+  - 8.1 [Strict Opt-in Analytics](#81-strict-opt-in-analytics)
+- 9 Appendix: CLI Frameworks
+  - 9.1 [CLI Frameworks Table](#91-cli-frameworks-table)
 
 ---
 
-# 1 Experiencia en Línea de Comando
+# 1 Command Line Experience
 
-Esta sección trata de las mejores prácticas relacionadas con la creación de aplicaciones de línea de comandos Node.js atractivas y de gran valor para el usuario.
+This section deals with best practices concerned with creating beautiful and high-value user experience Node.js command line applications.
 
-En esta sección:
+In this section:
 
-- 1.1 [Respeta los argumentos POSIX](#11-respect-posix-args)
-- 1.2 [Crea CLIs empáticos](#12-build-empathic-clis)
-- 1.3 [Stateful del dato](#13-stateful-data)
-- 1.4 [Proporcione una experiencia con color](#14-provide-a-colorful-experience)
-- 1.5 [Interacciones enriquecidas](#15-rich-interactions)
-- 1.6 [Hipervínculos en todas partes](#16-hyperlinks-everywhere)
-- 1.7 [Cero configuración](#17-zero-configuration)
-- 1.8 [Respetar las señales POSIX](#18-respect-posix-signals)
+- 1.1 [Respect POSIX args](#11-respect-posix-args)
+- 1.2 [Build empathic CLIs](#12-build-empathic-clis)
+- 1.3 [Stateful data](#13-stateful-data)
+- 1.4 [Provide a colorful experience](#14-provide-a-colorful-experience)
+- 1.5 [Rich interactions](#15-rich-interactions)
+- 1.6 [Hyperlinks everywhere](#16-hyperlinks-everywhere)
+- 1.7 [Zero configuration](#17-zero-configuration)
+- 1.8 [Respect POSIX signals](#18-respect-posix-signals)
 
-<br>
+<br/>
 
-### 1.1 Respeta los argumentos POSIX
+### 1.1 Respect POSIX args
 
-✅ **Haga:** Utilice [POSIX-compliant](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html) como sintaxis para argumentos de línea de comando, está ampliamente aceptado como estándar para las herramientas de línea de comando.
+✅ **Do:** Use [POSIX-compliant](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html) command line argument syntax, which is widely accepted as a standard for command line tools.
 
-❌ **De lo contrario:** Los usuarios pueden sentirse frustrados cuando la sintaxis de argumentos de una CLI, opciones o parámetros de comando se desvían de los estándares base de Unix a los que están acostumbrados.
+❌ **Otherwise:** Users may get frustrated when a CLI's syntax for arguments, options, or command parameters deviate from the de facto Unix standards they are used to.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Los sistemas operativos tipo Unix popularizaron el uso de la línea de comandos y herramientas como `awk` y/o `sed`. Estas han estandarizado el comportamiento de las opciones de línea de comando (también conocidas como banderas), argumentos y otros operadores.
+Unix-like operating systems popularized the use of the command line and tools such as `awk`, `sed`. Such tools have effectively standardized the behavior of command line options (aka flags), options-arguments, and other operands.
 
-Algunos ejemplos de comportamiento:
+Some examples of expected behavior:
 
-- Argumentos de opción u opciones se pueden anotar en la ayuda y/o en ejemplos con corchetes (`[]`) para indicar que son opcionales, o con corchetes angulares (`<>`) para indicar que son obligatorios.
-- Opciones especificadas utilizando la forma abreviada singular `-` puede contener un carácter alfanumérico.
-- Especificación de múltiples opciones sin valores pueden ser agrupadas como `myCli -abc` siendo equivalente a `myCli -a -b -c`.
+- option-arguments or options can be notated in help or examples as square brackets (`[]`) to indicate they are optional, or with angle brackets (`<>`) to indicate they are required.
+- allow short-form single letter arguments as aliases for long-form arguments (see reference from the [GNU Coding Standards](https://www.gnu.org/prep/standards/html_node/Command_002dLine-Interfaces.html)).
+- options specified using the short form singular `-` may container one alphanumeric character.
+- specifying multiple options with no values may be grouped, such as `myCli -abc` being equivalent to `myCli -a -b -c`.
 
-Los usuarios avanzados con la línea de comando esperarán que su aplicación de línea de comando tenga convenciones similares a otras aplicaciones de Unix.
+Command line power-users will expect your command line application to have similar conventions as other Unix apps.
 
-📦 **Paquetes recomendados**
+📦 **Recommended packages**
 
-Referencia a los paquetes Open Source para Node.js:
+Reference to Open Source Node.js packages:
 
 - [commander](https://github.com/tj/commander.js#readme)
 - [yargs](https://github.com/yargs/yargs)
 
-### 1.2 Crea CLIs empáticos
+### 1.2 Build empathic CLIs
 
-✅ **Haga:** Establezca flujos de trabajo que ayuden al usuario a interactuar con la CLI de forma correcta, de lo contrario es posible que las interacciones den lugar a errores y frustración.
+✅ **Do:** Put workflows in place that assist the user to interact with the CLI successfully, when otherwise such interactions would result in errors and frustration.
 
-❌ **De lo contrario:** Si no se proporciona asistencia para guiar al usuario, se generará frustración debido a la falta de capacidad para operar con la CLI.
+❌ **Otherwise:** Failing to provide actionable assistance in supporting the user will result in frustration due to the lack of capability to operate the CLI.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Una interfaz de línea de comandos no es diferente de una interfaz de usuario web en el sentido de hacer todo lo posible para asegurarse de que se esté utilizando de forma correcta y satisfactoria.
+A command line interface for your program is no different than a web user interface in the sense of doing as much as you can as the program author to ensure that it is being used successfully.
 
-Optimice las interacciones satisfactorias mediante la creación de CLIs empáticas que guíen al usuario. Como ejemplo, analicemos el caso de utilizar el programa `curl` el cual espera una URL como entrada de datos y que el usuario no pueda proporcionarla. Tal fallo guiará al usuario con mensajes de error descriptivos (con suerte) o con la revisión de una ayuda `curl --help`. Sin embargo, una CLI empática habría presentado un mensaje interactivo para capturar la información del usuario, lo que desembocaría en una interacción satisfactoria.
+Optimize for successful interactions by building empathic CLIs that support the user. As an example, let's explore the case of the `curl` program that expects a URL as its primary data input, and the user failing to provide it. Such failure will lead to reading through a (hopefully) descriptive error messages or reviewing a `curl --help` output. However, an empathic CLI would have presented an interactive prompt to capture input from the user, resulting in a successful interaction.
 
-### 1.3 Stateful del dato
+### 1.3 Stateful data
 
-✅ **Haga:** Proporcione una experiencia con memoria de estado entre múltiples invocaciones de la aplicación CLI y recuerde valores y datos para proporcionar una interacción perfecta.
+✅ **Do:** Provide a stateful experience between multiple invocations of your CLI app, and remember values and data in order to provide seamless interaction.
 
-❌ **De lo contrario:** Requerir que el usuario proporcione de forma repetitiva la misma información en múltiples invocaciones de la CLI molestará a su usuario.
+❌ **Otherwise:** Requiring your user to repeatedly provide the same information with multiple invocations of the CLI will annoy your user.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Es posible que necesite proporcionar persistencia de datos para la aplicación CLI, como podrá ser la de recordar un nombre de usuario, correo electrónico, token de una API u otras preferencias entre múltiples invocaciones de la CLI. Utilice un asistente de configuración que permita a la aplicación ofrecer persistencia de estas configuraciones de usuario. En este caso asegúrese de seguir la [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) cuando lea/escriba archivos (o elige un asistente de configuración para esta especificación). Esto mantendrá al usuario con el control de dónde se escriben y administran los archivos.
+It may happen that you find yourself needing to provide storage persistence for your CLI application, such as remembering a username, email, API token, or other preferences between multiple invocations of the CLI. Use a configuration helper that allows the app to persist such user settings. Be sure to follow the [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) when reading/writing files (or choose a configuration helper that respects the spec). These keeps the user in control of where files are written and managed.
 
-Proyectos de referencia:
+Reference projects:
 
 - [configstore](https://www.npmjs.com/package/configstore)
 - [conf](https://www.npmjs.com/package/conf)
 
-### 1.4 Proporcione una experiencia con color
+### 1.4 Provide a colorful experience
 
-✅ **Haga:** Utilice colores en su aplicación CLI para resaltar partes de la salida de su aplicación y proporcione una lectura fácil con la detección de color para permitir la exclusión de partes de la salida que puedan ser confusa. Asegúrese de que la opción de entrada y salida manual sea posible mediante la opción CLI, la variable de entorno y / o el archivo de configuración.
+✅ **Do:** Make use of colors in your CLI application to highlight parts of your app's output, and provide a graceful degradation, or color detection, to allow automatic opt-out so that output isn't garbled. Ensure manual opt-in and opt-out is possible via CLI option, environment variable, and/or config file.
 
-❌ **De lo contrario:** La información puede perderse fácilmente en la salida especialmente cuando la salida tiene mucho texto.
+❌ **Otherwise:** Information may easily get lost in pale program output, especially when the output is text-heavy.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-La mayoría de los terminales utilizados hoy en día para interactuar con aplicaciones de línea de comandos admiten texto en color habilitados por caracteres codificados ANSI especialmente diseñados.
+Most terminals used today to interact with command line applications support colored text such as these enabled by specially crafted ANSI encoded characters.
 
-Una pantalla con color en la salida puede contribuir aún más a una experiencia más rica y a una mayor interacción. Dicho esto, los terminales no compatibles pueden experimentar una salida en forma de información confusa. Además, se puede usar una CLI en trabajos de compilación con integración continua que puede no admitir resultados coloreados. Incluso fuera de los servidores de compilación, se puede usar una CLI a través de la consola de un IDE que puede no manejar ciertos caracteres. La exclusión manual debe estar disponible.
+A colorful display in your command line application output may further contribute to a richer experience and increased interaction. That said, unsupported terminals may experience a degraded output in the form of garbled information on the screen. Furthermore, a CLI may be used in a continuous integration build job which may not support colored output. Even outside of build servers, a CLI may be used through an IDE's console that may not handle certain characters. Manual opt-out must be available.
 
-Proyectos de referencia:
-
-- [chalk](https://www.npmjs.com/package/chalk)
-- [colors](https://www.npmjs.com/package/colors)
-- [kleur](https://www.npmjs.com/package/kleur)
-
-📦 **Paquetes recomendados**
-
-Paquetes de referencia Open Source para Node.js:
+Reference projects:
 
 - [chalk](https://www.npmjs.com/package/chalk)
 - [colors](https://www.npmjs.com/package/colors)
 - [kleur](https://www.npmjs.com/package/kleur)
 
-### 1.5 Interacciones enriquecidas
+📦 **Recommended packages**
 
-✅ **Haga:** Aproveche el uso de interacciones de línea de comandos enriquecidas más allá de los principios básicos de la entrada de texto para proporcionar una experiencia más fluida a los usuarios de CLI.
+Reference to Open Source Node.js packages:
 
-❌ **De lo contrario:** Un mensaje de texto como entrada puede resultar engorroso para los usuarios cuando los datos son en forma de opciones cerradas (es decir, menús desplegables).
+- [chalk](https://www.npmjs.com/package/chalk)
+- [colors](https://www.npmjs.com/package/colors)
+- [kleur](https://www.npmjs.com/package/kleur)
 
-ℹ️ **Detalles**
+### 1.5 Rich interactions
 
-Se puede mejorar la interactividad en forma de entradas rápidas, que son más sofisticadas que el texto libre, como listas de selección desplegables, botones de radio, clasificación, autocompletar o entradas de contraseña ocultas.
+✅ **Do:** Leverage the use of rich command line interactions beyond the basics of text input prompt to provide a smoother experience for CLI users.
 
-Otro tipo de interactividad enriquecida es en forma de loaders animados y barras de progreso que proporcionan una mejor experiencia para los usuarios cuando se realiza un trabajo asincrónico.
+❌ **Otherwise:** A text prompt as input may prove cumbersome for users when data to reason about is in the form of closed options (i.e: dropdowns).
 
-Muchas CLI proporcionan argumentos de línea de comandos predeterminados sin requerir ninguna experiencia interactiva adicional. No obligue a sus usuarios a proporcionar parámetros que la aplicación pueda resolver por sí misma.
+ℹ️ **Details**
 
-📦 **Paquetes recomendados**
+Rich interactivity can be introduced in the form of prompt inputs, which are more sophisticated than free text, such as dropdown select lists, radio button toggles, rating, auto-complete, or hidden password inputs.
 
-Paquetes de referencia Open Source para Node.js:
+Another type of rich interactivity is in the form of animated loaders and progress-bars which provide a better experience for users when asynchronous work is being performed.
+
+Many CLIs provide default command line arguments without requiring any further interactive experience. Don't force your users to provide parameters that the app can work out for itself.
+
+📦 **Recommended packages**
+
+Reference to Open Source Node.js packages:
 
 - [enquirer](https://www.npmjs.com/package/enquirer)
 - [ora](https://www.npmjs.com/package/ora)
 - [ink](https://www.npmjs.com/package/ink)
 - [prompts](https://www.npmjs.com/package/prompts)
 
-### 1.6 Hipervínculos en todas partes
+### 1.6 Hyperlinks everywhere
 
-✅ **Haga:** Utilice hipervínculos formateados correctamente en la salida de texto para ambas URLs (e.g: `https://www.github.com`), así como el código fuente (e.g: `src/Util.js:2:75`) - ambos terminales modernos pueden transformarse en un enlace en el que se puede hacer clic.
+✅ **Do:** Use properly formatted hyperlinks in text output for both URLs (e.g: `https://www.github.com`), as well as source code (e.g: `src/Util.js:2:75`) - both of which a modern terminal is able to transform into a clickable link.
 
-❌ **De lo contrario:** Evite los enlaces rotos y no interactivos como `git.io/abc` que requieren que su usuario copie y pegue manualmente.
+❌ **Otherwise:** Avoid broken and non-interactive links like `git.io/abc` which requires your user to copy and paste manually.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Si está compartiendo enlaces a URL o apuntando a un archivo y a un número de línea y columna específicos en el archivo, puede proporcionar enlaces formateados a estos dos ejemplos que, una vez que se haga clic, abrirán el navegador o un IDE con la zona definida.
+If you are sharing links to URLs, or pointing to a file and a specific line number and column in the file, you can provide properly formatted links to both of these examples that, once clicked, will open up the browser, or an IDE at the defined location.
 
-### 1.7 Cero configuración
+Reference projects:
 
-✅ **Haga:** Optimice una experiencia plug-and-play al detectar automáticamente la configuración requerida y los valores de los argumentos de la línea de comandos
+- [open](https://github.com/sindresorhus/open)
 
-❌ **De lo contrario:** No fuerce la interactividad del usuario si un argumento de línea de comandos se puede detectar automáticamente de una manera fiable, y de esta forma la acción invocada no requiera explícitamente la interacción del usuario (como confirmar una eliminación).
+### 1.7 Zero configuration
 
-ℹ️ **Detalles**
+✅ **Do:** Optimize a plug-and-play experience by auto-detecting required configuration and command line arguments values.
 
-Trate de proporcionar una experiencia "lista para usar" al ejecutar la aplicación CLI.
-Por ejemplo, [POSIX define un estándar para la configuración de variables de entorno] (https://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap08.html) utilizado para diferentes propósitos, como: `TMPDIR`,` NO_COLOR`, `DEBUG`,` HTTP_PROXY` y otros. Detecte estos automáticamente y solicite confirmación cuando sea necesario.
+❌ **Otherwise:** Don't force user interactivity if a command-line argument can be auto-detected in a reliable way, and the action invoked doesn't explicitly require user interaction (such as confirming a deletion).
 
-Proyectos de referencia que se construyen bajo la idea de la Cero Configuración:
+ℹ️ **Details**
 
-- [Jest JavaScript Testing Framework](https://jestjs.io)
-- [Parcel](https://parceljs.org), un paquete de aplicaciones web
+Aim to provide a "works out of the box" experience when running the CLI application. For example, [POSIX defines a standard for environment variable configuration](https://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap08.html) used for different purposes, such as: `TMPDIR`, `NO_COLOR`, `DEBUG`, `HTTP_PROXY` and others. Detect these automatically and prompt for confirmation when necessary.
 
-### 1.8 Respetar las señales POSIX
+Reference projects which are built around Zero configuration:
 
-✅ **Haga:** Asegúrese de que su programa respete las [señales POSIX](http://man7.org/linux/man-pages/man7/signal.7.html) para permitir una interacción adecuada con los usuarios u otros programas.
+- The [Jest JavaScript Testing Framework](https://jestjs.io)
+- [Parcel](https://parceljs.org), a web application bundler
 
-❌ **De lo contrario:** Su programa no funcionará bien con otros programas y provocará un comportamiento inesperado.
+### 1.8 Respect POSIX signals
 
-ℹ️ **Detalles**
+✅ **Do:** Ensure your program respects [POSIX signals](http://man7.org/linux/man-pages/man7/signal.7.html) to allow it proper interaction with users or other programs.
 
-Especialmente para las aplicaciones CLI, es común interactuar con la entrada del usuario y una gestión inadecuada de eventos del teclado, eso puede provocar que su aplicación no responda a las interrupciones SIGINT, comúnmente utilizadas por los usuarios cuando presionan las teclas `CTRL+C`.
+❌ **Otherwise:** Your program will not play well with other programs and introduce unexpected behavior.
 
-El problema de no respetar las señales de proceso empeora cuando el programa está siendo orquestado por una interacción no humana. Por ejemplo, una CLI que se ejecuta en un contenedor pero no responde a las señales de interrupción de software que se le envían.
+ℹ️ **Details**
 
-# 2 Distribución
+Especially for CLI applications, it is common to interact with user input and improperly managing keyboard events may result in your app failing to respond to SIGINT interrupts, commonly used by users when they hit the `CTRL+C` keys.
 
-Esta sección trata las mejores prácticas relacionadas con la distribución y el empaquetado de una aplicación de línea de comandos Node.js.
+The problem of not respecting process signals worsens when the program is being orchestrated by non-human interaction. For example, a CLI that runs in a docker container but will not respond to software interrupt signals sent to it.
 
-En esta sección:
+# 2 Distribution
+
+This section deals with best practices concerned with distributing and packaging a Node.js command line application in an optimal matter for consumers.
+
+In this section:
 
 - 2.1 [Prefer a small dependency footprint](#21-prefer-a-small-dependency-footprint)
-- 2.2 [Utilice shrinkwrap, Luke](#22-use-the-shrinkwrap-luke)
-- 2.3 [Limpieza en los archivos de configuración](#23-cleanup-configuration-files)
+- 2.2 [Use the shrinkwrap, Luke](#22-use-the-shrinkwrap-luke)
+- 2.3 [Cleanup configuration files](#23-cleanup-configuration-files)
 
-### 2.1 Prefiera dependencias pequeñas
+### 2.1 Prefer a small dependency footprint
 
-✅ **Haga:** Minimice el uso de dependencias de producción, use dependencias alternativas que sean más pequeñas y verifique sus dependencias, así como dependencias transitivas para garantizar un pequeño paquete de la CLI de Node.js. Juegue con esto teniendo cuidado de no optimizar demasiado el uso de dependencias reinventando la rueda.
+✅ **Do:** Minimize your use of production dependencies, use alternative dependencies which are smaller, and vet your dependencies' footprints as well for transitive dependencies to ensure a small bundle of the Node.js CLI. Balance this by being careful to not over-optimize use of dependencies by reinventing the wheel.
 
-❌ **De lo contrario:** El tamaño y el uso de las dependencias en la aplicación afectarán el tiempo de instalación de su CLI de Node.js, lo que podría proporcionar una mala experiencia de usuario.
+❌ **Otherwise:** The size and use of dependencies in the application will impact the install time of your Node.js CLI, potentially providing a poor user experience.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Un rápido `npm install` con el que invocar las aplicaciones de lineas de comandos en Node.js CLIs con `npx` puede proporcionar una mejor experiencia de usuario. Esto es posible cuando la dependencia general, y la dependencia transitiva mantiene a un tamaño razonable.
+A fast `npm install` for Node.js CLIs invoked with `npx` will provide a better user experience. This is made possible when the overall dependency, and transitive dependency, footprint is kept to a reasonable size.
 
-La instalación global `npm` de un paquete de `npm` es de instalación lenta y ofrecerá una mala experiencia, pero el uso de `npx` para invocar paquetes ejecutables hará que el rendimiento mejore, debido a que `npx` siempre busca e instala paquetes desde su registro que son más significativos.
+A one-off global `npm` installation of a slow-to-install `npm` package will offer a one-off poor experience, but the use of `npx` by users to invoke executable packages will make the degraded performance, due to `npx` always fetching and installing packages from the registry, more significant and obvious.
 
-Proyectos de referencia:
+Reference projects:
 
-- [Bundlephobia](https://bundlephobia.com/) es una herramienta para ayudarlo a encontrar el costo de un paquete npm.
+- [Bundlephobia](https://bundlephobia.com/) is a tool to help you find the cost of a npm package.
 
-### 2.2 Utilice shrinkwrap, Luke
+### 2.2 Use the shrinkwrap, Luke
 
-✅ **Haga:** Utilice `npm-shrinkwrap.json` de npm como un archivo de bloqueo para garantizar que las versiones de dependencia fijadas (directas y transitivas) se propaguen a sus usuarios finales cuando instalen su paquete npm.
+✅ **Do:** Use npm's `npm-shrinkwrap.json` as a lockfile to ensure that pinned-down dependency versions (direct and transitive) propagate to your end users when they install your npm package.
 
-❌ **De lo contrario:** No corregir las versiones de las dependencias de su aplicación significará que el administrador de paquetes (por ejemplo, `npm`) las resolverá durante la instalación, y las dependencias transitivas instaladas a través de rangos de versiones pueden introducir cambios importantes que no puede controlar, lo que puede resultar en su aplicación Node.js no pueda compilarse o ejecutarse.
+❌ **Otherwise:** Not fixing the versions of your app's dependencies will mean that the package manager (e.g. `npm`) will resolve them during installation, and transitive dependencies installed via version ranges may introduce breaking changes that you can't control, that may result in your Node.js CLI application failing to build or run.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Utilice el ~~force~~ shrinkwrap, Luke!
+Use the ~~force~~ shrinkwrap, Luke!
 
-Normalmente, un paquete npm solo define sus dependencias directas, y su rango de versiones, cuando se instala, y el administrador de paquetes npm resolverá todas las versiones de dependencias transitivas después de la instalación. Con el tiempo, las versiones de las dependencias variarán, ya que las nuevas dependencias directas y transitivas lanzarán nuevas versiones.
+Typically, an npm package only defines its direct dependencies, and their version range, when being installed, and the npm package manager will resolve all the transitive dependencies' versions upon installation. Over time, the resolved versions of dependencies will vary, as new direct, and transitive dependencies will release new versions.
 
-Aunque el [Versionado Semántico](https://semver.org/) es ampliamente aceptado, sabemos que npm [introduce muchas dependencias](https://snyk.io/blog/how-much-do-we-really-know-about-how-packages-behave-on-the-npm-registry/) en el paquete que se está instalando, lo que aumenta el riesgo de que un paquete introduzca cambios que puedan dañar su aplicación.
+Even though [Semantic Versioning](https://semver.org/) is broadly accepted among maintainers, npm is [known to introduce many dependencies](https://snyk.io/blog/how-much-do-we-really-know-about-how-packages-behave-on-the-npm-registry/) for an average package being installed, which adds to the risk of a package introducing changes that may break your application.
 
-La otra cara del uso de `npm-shrinkwrap.json` son las implicaciones de seguridad que imponemos. Las dependencias que se instalan están ancladas a versiones específicas, por lo que incluso si se lanzan versiones más nuevas de estas dependencias, no se instalarán. Esto le transfiere la responsabilidad a usted, la persona que mantiene el proyecto, de tenerlo actualizado con cualquier corrección de seguridad en sus dependencias, y lanzar su aplicación CLI regularmente con actualizaciones de seguridad. Considere usar la [Actualización de dependencia de Snyk](https://snyk.io/) para corregir automáticamente los problemas de seguridad en su árbol de dependencias. _Revelación: soy un desarrolladores defensor en Snyk_.
+The flip side of using `npm-shrinkwrap.json` is the security implications you are forcing upon your consumers. The dependencies being installed are pinned to specific versions, so even if newer versions of these dependencies are released, they won't be installed. This moves the responsibility to you, the maintainer, to stay up-to-date with any security fixes in your dependencies, and release your CLI application regularly with security updates. Consider using [Snyk Dependency Upgrade](https://snyk.io/) to automatically fix security issues across your dependency tree. _Full disclosure: I am a developer advocate at Snyk._
 
-> 👍 Consejo
-> Utilice el comando `npm shrinkwrap` para generar el archivo de bloqueo shrinkwrap, que tiene el mismo formato que el archivo `package-lock.json`.
+> 👍 Tip
+> 
+> Use `npm shrinkwrap` command to generate the shrinkwrap lockfile, which is of the same format as that of a `package-lock.json` file.
 
-Referencias:
+References:
 
-- [¿Realmente sabes cómo funciona un archivo de bloqueo para paquetes de Yarn y npm?](https://snyk.io/blog/making-sense-of-package-lock-files-in-the-npm-ecosystem/)
-- [Documentos de Yarn: ¿Deben comprometerse los archivos de bloqueo en el repositorio?](https://next.yarnpkg.com/advanced/qa#should-lockfiles-be-committed-to-the-repository)
+- [Do you really know how a lockfile works for yarn and npm packages?](https://snyk.io/blog/making-sense-of-package-lock-files-in-the-npm-ecosystem/)
+- [Yarn docs: Should lockfiles be committed to the repository?](https://next.yarnpkg.com/advanced/qa#should-lockfiles-be-committed-to-the-repository)
 
-### 2.3 Limpieza en los archivos de configuración
+### 2.3 Cleanup configuration files
 
-✅ **Haga:** Limpie los archivos de configuración cuando se desinstale la aplicación CLI. Opcionalmente, las aplicaciones CLI pueden solicitar a sus usuarios que guarden los archivos de configuración para omitir la configuración en la fase de reinicialización para una mejor experiencia de usuario.
+✅ **Do:** Cleanup configuration files when the CLI application gets uninstalled. Optionally, CLI applications can prompt your users to keep the configuration files to skip the re-initialising phase on the next installation for a better user experience.
 
-❌ **De lo contrario:** El sistema de almacenamiento del usuario puede contener residuos en forma de archivos de configuración huérfanos y datos identificables que la herramienta CLI generó cuando se instaló.
+❌ **Otherwise:** The user's file system may contain residue in the form of orphaned configuration files, and identifiable data which the CLI tool introduced when installed.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Como se menciona en la [Stateful del dato] (#13-stateful-data), si su aplicación CLI usa almacenamiento persistente para guardar archivos de configuración, la aplicación CLI también debería ser responsable de eliminar dichos archivos cuando se desinstale .
+As mentioned in the [stateful data section](#13-stateful-data), if your CLI application uses persistent storage, such as to save configuration files, then the CLI application should also be responsible for removing its configuration files when it gets uninstalled.
 
-Puede usar NPMs `pre` o` post` desinstalar [script](https://docs.npmjs.com/misc/scripts) para conseguirlo. Puede encontrar un ejemplo funcional en este [repositorio](https://github.com/m-sureshraj/jenni/blob/master/src/scripts/pre-uninstall.js).
+Due to npm package manager not providing uninstall hook since npm v7, your program should include an uninstallation option, either via [arguments](#11-respect-posix-args) (e.g. `--uninstall`) or via [rich interaction](#15-rich-interactions).
 
-# 3 Interoperabilidad
+> 👍 Tip
+> 
+> Optionally you can provide `pre` and `post` uninstall [script](https://docs.npmjs.com/misc/scripts) which will be automatically called if the **npm version is 6 or lower**. You can find a working example in this [repository](https://github.com/m-sureshraj/jenni/blob/master/src/scripts/pre-uninstall.js).
 
-Esta sección sobre las mejores prácticas relacionadas con hacer que su CLI de Node.js se integre perfectamente con otras herramientas de línea de comandos y siga una conversación natural para que las CLI operen entre si.
+# 3 Interoperability
 
-En esta sección encontrarás respuestas a preguntas como:
+This section deals with best practices concerned with making your Node.js CLI seamlessly integrate with other command line tools, and following conventions that are natural for CLIs to operate in.
 
-- _¿Puedo exportar la salida de la CLI para un parsing fácil?_
-- _¿Puedo canalizar la salida de esta CLI a la entrada de otra herramienta de línea de comando?_
-- _¿Puedo canalizar el resultado de otra herramienta a mi CLI?_
+This section answers questions such as:
 
-En esta sección:
+- _Can I export the output of this CLI for easy parsing?_
+- _Can I pipe the output of this CLI to the input of another command line tool?_
+- _Can I pipe the result of another tool to this CLI?_
 
-- 3.1 [Aceptar entradas como STDIN](#31-accept-input-as-stdin)
-- 3.2 [Habilitar una salida estructurada](#32-enable-structured-output)
-- 3.3 [Etiqueta multiplataforma](#33-cross-platform-etiquette)
-- 3.4 [Permita anulaciones del entorno](#34-allow-environment-overrides)
+In this section:
 
-### 3.1 Aceptar entradas como STDIN
+- 3.1 [Accept input as STDIN](#31-accept-input-as-stdin)
+- 3.2 [Enable structured output](#32-enable-structured-output)
+- 3.3 [Cross-platform etiquette](#33-cross-platform-etiquette)
+- 3.4 [Support configuration precedence](#34-support-configuration-precedence)
 
-✅ **Haga:** Para las aplicaciones de línea de comandos que se espera que funcionen con datos, facilite al usuario el canalizar los datos a una entrada estándar (STDIN).
+### 3.1 Accept input as STDIN
 
-❌ **De lo contrario:** Otras aplicaciones de línea de comandos no podrán proporcionar su resultado directamente como entrada para su CLI, lo que evita las acciones comunes de UNIX como:
+✅ **Do:** For command line applications that are expected to work with data, make it easy for a user to pipe the data to standard input (STDIN).
+
+❌ **Otherwise:** Other command line applications will not be able to provide their result, directly as input for your CLI, which prevents common UNIX one-liners such as:
 
 ```sh
 $ curl -s "https://api.example.com/data.json" | your_node_cli
 ```
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Si la aplicación de línea de comando funciona con datos, como realizar algún tipo de tarea en un archivo JSON que generalmente se especifica con el argumento `--file <file.json>`.
+If the command line application works with data, such as performing some kind of task on a JSON file that is usually specified with `--file <file.json>` command line argument.
 
-Un ejemplo basado en los documentos oficiales de la [API de Node.js para el módulo for readline](https://nodejs.org/api/readline.html) de cómo tomar la entrada de una pipe sería el siguiente:
+An example that is based on the official [Node.js API docs for the for readline module](https://nodejs.org/api/readline.html) of how taking input from a command pipe is as follows:
 
 ```js
 const readline = require("readline");
@@ -387,37 +400,37 @@ rl.question("What do you think of Node.js? ", (answer) => {
 });
 ```
 
-Luego defina la entrada a la aplicación Node.js anterior:
+Then pipe the input to the above Node.js application:
 
 ```sh
 echo "Node.js is amazing" | node cli.js
 ```
 
-### 3.2 Habilitar una salida estructurada
+### 3.2 Enable structured output
 
-✅ **Haga:** Habilite una bandera que permitir la salida estructurada del resultado de la aplicación, si dicho resultado está disponible permitirá el análisis y la manipulación fácil de los datos.
+✅ **Do:** Enable a flag to allow structured output of the app's result, if such result is available, to enable parsing and easy manipulation of the data.
 
-❌ **De lo contrario:** Los usuarios de la CLI pueden necesitar aplicar técnicas complicadas de análisis y comparación de expresiones regulares para extraer los datos de salida proporcionados por su CLI.
+❌ **Otherwise:** Users of the CLI may need to apply complicated regex parsing and matching techniques to extract the output data provided by your CLI.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-A menudo es útil para los usuarios de una aplicación de línea de comandos analizar los datos y realizar otras tareas con ellos, como usarlos para nutrir de información a paneles web o notificaciones por correo electrónico.
+It is often useful for users of a command line application to parse the data and perform other tasks with it, such as using it to feed web dashboards, or email notifications.
 
-Poder extraer fácilmente los datos de interés de una salida de línea de comandos proporciona una experiencia más amigable para los usuarios de su CLI.
+Being able to easily extract the data of interest from a command line output provides a friendlier experience to users of your CLI.
 
-### 3.3 Etiqueta multiplataforma
+### 3.3 Cross-platform etiquette
 
-✅ **Haga:** Si se espera que sea una CLI multiplataforma, se debe prestar la debida atención a la semántica de los shells de comandos y sus componentes como los sistemas de archivos.
+✅ **Do:** If a CLI is expected to function across platforms, proper attention must be given to semantics of command shells, and components such as file systems, along with developers leveraging relevant programming constructs.
 
-❌ **De lo contrario:** La CLI se interrumpirá en otros sistemas operativos debido a factores como caracteres especiales, separadores de ruta entre otros, aunque no haya diferencias funcionales en el código.
+❌ **Otherwise:** The CLI will break on other operating systems due to factors such as incorrect path separator characters, even though there are no functional differences in the code.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Aunque, desde la perspectiva del programa la funcionalidad no se está reduciendo y _debería_ ejecutarse bien en diferentes sistemas operativos, algunos matices pueden hacer que el programa no funcione. Revisemos algunos casos en los que se debe respetar la ética multiplataforma.
+Even though, from a program's perspective, the functionality isn't being stripped down and _should_ execute well in different operating systems, some missed nuances may render the program inoperable. Let's explore several cases where cross-platform ethics must be honored.
 
-#### El aparecer un comando de forma incorrecta
+#### Wrongly spawning a command
 
-Es posible que deba generar un proceso que ejecute un programa Node.js. Por ejemplo, si tiene el siguiente script:
+You might need to spawn a process that runs a Node.js program. For example, you have the following script:
 
 `program.js`
 
@@ -427,23 +440,23 @@ Es posible que deba generar un proceso que ejecute un programa Node.js. Por ejem
 // the rest of your app code
 ```
 
-Esto funciona:
+This works:
 
 ```
 const cliExecPath = 'program.js'
 const process = childProcess.spawn(cliExecPath, [])
 ```
 
-Esto sería mejor:
+This is better:
 
 ```
 const cliExecPath = 'program.js'
 const process = childProcess.spawn('node', [cliExecPath])
 ```
 
-¿Por qué es mejor? El código de `program.js` comienza con la notación [Shebang](<https://en.wikipedia.org/wiki/Shebang_(Unix)>) similar a Unix, sin embargo, Windows no sabe cómo interpretarlo debido a que Shebang no es un estándar multiplataforma.
+Why is it better? The `program.js` source code begins with the Unix-like [Shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) notation, however Windows doesn't know how to interpret this due to the fact that Shebang isn't a cross-platform standard.
 
-Esto también ocurre en los scripts `package.json`. Considere lo siguiente como una mala práctica a la hora de definir un script de ejecución npm:
+This is also true for `package.json` scripts. Consider the following bad practice of defining an npm run script:
 
 ```
 "scripts": {
@@ -451,9 +464,9 @@ Esto también ocurre en los scripts `package.json`. Considere lo siguiente como 
 }
 ```
 
-Esto hace que Shebang en `myInstalls.js` no ayude a Windows a comprender cómo ejecutarlo con el intérprete `node`.
+This is due to the fact that the Shebang in `myInstalls.js` will not help Windows understand how to run this with the `node` interpreter.
 
-En cambio, utilice la mejor práctica de:
+Instead, follow the best practice of:
 
 ```
 "scripts": {
@@ -461,13 +474,13 @@ En cambio, utilice la mejor práctica de:
 }
 ```
 
-#### Las intérpretes de shell varían
+#### Shell interpreters vary
 
-No todos los caracteres se tratan de la misma manera en diferentes intérpretes de shell.
+Not all characters are treated the same across different shell interpreters.
 
-Por ejemplo, el símbolo del sistema de Windows no trata una comilla simple igual que una comilla doble, como se esperaría en un shell bash, por lo que no reconoce que toda la cadena dentro de las comillas simple pertenezca a la misma cadena, lo que conducirá a errores.
+For example, the Windows command prompt doesn't treat a single quote the same as a double quote, as would be expected on a bash shell, and so it doesn't recognize that the whole string inside a single quote belongs to the same string group, which will lead to errors.
 
-Esto fallará en un entorno Node.js en Windows en el que use el símbolo del sistema de Windows:
+This will fail in a Windows Node.js environment that uses the Windows command prompt:
 
 package.json
 
@@ -478,7 +491,7 @@ package.json
 }
 ```
 
-Para solucionarlo y conseguir que el script `npm run` sea multiplataforma entre Windows, macOS y Linux:
+To fix this so that this `npm run` script will indeed be cross-platform between Windows, macOS and Linux:
 
 package.json
 
@@ -489,204 +502,194 @@ package.json
 }
 ```
 
-En este ejemplo, tuvimos que usar comillas dobles y escapar la notación JSON.
+In this example we had to use double quotes and escape them with the JSON notation.
 
-#### Evita concatenar paths
+#### Avoid concatenating paths
 
-Los paths se construyen de manera diferente en diferentes plataformas. Cuando se construyen manualmente mediante la concatenación de cadenas, es probable que no sean utilizables entre diferentes plataformas.
+Paths are constructed differently across different platforms. When they are built manually by concatenating strings they are bound not to be interoperable between different platforms.
 
-Consideremos el siguiente ejemplo una mala práctica:
+Let's consider the following bad practice example:
 
 ```js
 const myPath = `${__dirname}/../bin/myBin.js`;
 ```
 
-Se supone que la barra diagonal es el separador de ruta donde en Windows, por ejemplo, se utiliza una barra diagonal inversa.
+It assumes that forward slash is the path separator where on Windows, for example, a backslash is used.
 
-En lugar de crear manualmente rutas consulte el módulo `path` de Node.js para hacer esto:
+Instead of manually building filesystem paths, defer to Node.js's own `path` module to do this:
 
 ```js
 const myPath = path.join(__dirname, "..", "bin", "myBin.js");
 ```
 
-#### Evite enlazar comandos con puntos y comas
+#### Avoid chaining commands with semicolons
 
-Los shells de Linux son compatibles con puntos y comas (`;`) para encadenar comandos y que se ejecuten secuencialmente, como: `cd /tmp; ls`. Sin embargo en Windows fallará.
+Linux shells are known to support a semicolon (`;`) to chain commands to run sequentially, such as: `cd /tmp; ls`. However, doing the same on Windows will fail.
 
-Evita hacer lo siguiente:
+Avoid doing the following:
 
 ```js
 const process = childProcess.exec(`${cliExecPath}; ${cliExecPath2}`);
 ```
 
-En su lugar, use las anotaciones de doble ampersand o double pipe:
+Instead, use the double ampersand or double pipe notations:
 
 ```js
 const process = childProcess.exec(`${cliExecPath} || ${cliExecPath2}`);
 ```
 
-### 3.4 Permita anulaciones del entorno
+### 3.4 Support configuration precedence
 
-✅ **Haga:** Permita que la configuración se lea desde las variables de entorno y, cuando entre en conflicto con los argumentos de la línea de comandos, permita que las variables de entorno se anulen.
+✅ **Do:** Allow configuration to be obtained from multiple sources, by order of precedence. Command line arguments take highest priority, followed by shell variables, and then different levels of configuration.
 
-❌ **De lo contrario:** No se podrá invocar la CLI con una configuración personalizada.
+❌ **Otherwise:** Users face frustration when customizing their experience with the CLI.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Detecte y admita la configuración mediante variables de entorno, ya que será una forma común en muchas herramientas con el fin de modificar el comportamiento de la aplicación CLI ejecutada.
+Detect and support configuration setting using environment variables as this will be a common way in many toolchains to modify the behavior of the invoked CLI application.
 
-El orden de precedencia de configuración para las aplicaciones de línea de comandos debe seguir estas reglas:
+Configuration order of precedence for command line applications should follow this:
 
-- Argumentos de la línea de comando especificados cuando se invoca la aplicación.
-- Las variables de entorno del shell generada y cualquier otra variable de entorno disponible para la aplicación.
-- La configuración del proyecto, por ejemplo: un archivo de directorio local `.git / config`.
-- La configuración del usuario, por ejemplo: el archivo de configuración del directorio de inicio del usuario: `~ / .gitconfig` o su equivalente XDG:` ~ / .config / git / config`.
-- La configuración del sistema, por ejemplo: `/ etc / gitconfig`.
+- Command line arguments specified when the application is invoked.
+- The spawned shell's environment variables, and any other environment variables available to the application.
+- The project scope configuration, e.g: a local directory `.git/config` file.
+- The user scope configuration, e.g: the user's home directory configuration file: `~/.gitconfig` or its XDG equivalent: `~/.config/git/config`.
+- The system scope configuration, e.g: `/etc/gitconfig`.
 
-Proyectos de referencia:
+Reference projects:
 
 - [cosmiconfig](https://github.com/davidtheclark/cosmiconfig)
 
-# 4 Accesibilidad
+# 4 Accessibility
 
-Esta sección trata las mejores prácticas relacionadas con hacer que una aplicación CLI de Node.js esté disponible para los usuarios que desean consumirla, pero que carecen del entorno para el que el responsable diseñó la aplicación.
+This section deals with best practices concerned with making a Node.js CLI application available to users who wish to consume it, but who are lacking the environment for which the maintainer designed the application.
 
-En esta sección:
+In this section:
 
-- 4.1 [Contenedor para la CLI](#41-containerize-the-cli)
+- 4.1 [Containerize the CLI](#41-containerize-the-cli)
 - 4.2 [Graceful degradation](#42-graceful-degradation)
-- 4.3 [Compatibilidad con versiones de Node.js](#43-nodejs-versions-compatibility)
-- 4.4 [Shebang para detectar de forma automática el runtime de Node.js](#44-shebang-autodetect-the-nodejs-runtime)
+- 4.3 [Node.js versions compatibility](#43-nodejs-versions-compatibility)
+- 4.4 [Shebang autodetect the Node.js runtime](#44-shebang-autodetect-the-nodejs-runtime)
 
-### 4.1 Contenedor para la CLI
+### 4.1 Containerize the CLI
 
-✅ **Haga:** Cree una imagen de Docker para la CLI y publíquela en un registro público como Docker Hub para que los usuarios sin un entorno Node.js puedan usarla.
+✅ **Do:** Create a docker image for the CLI and publish it to a public registry like Docker Hub so that users without a Node.js environment can use it.
 
-❌ **De lo contrario:** Los usuarios sin un entorno Node.js tampoco tendrán `npm` o `npx` disponibles, por lo que no podrán ejecutar su aplicación CLI.
+❌ **Otherwise:** Users without a Node.js environment will not have `npm` or `npx` available, and so won't be able to run your CLI application.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-La instalación de las aplicaciones de CLI de Node.js desde el registro npm generalmente se realizan con herramientas nativas de Node.js, como `npm` o `npx`. Estos son comunes entre los desarrolladores de JavaScript y Node.js, y esperan que se mencionen en las instrucciones de instalación.
+Installing Node.js CLI applications from the npm registry will typically be done with Node.js native toolchain such as `npm` or `npx`. These are common across JavaScript and Node.js developers, and are expected to be referenced within install instructions.
 
-Sin embargo, si está pensando a una aplicación CLI para el público en general, independientemente de su familiaridad con JavaScript o estas herramientas, entonces la distribución de su aplicación CLI solo desde npm en forma de instalación será restrictivo. Si su aplicación CLI está diseñada para ser utilizada en un entorno de compilación o CI, entonces también se les puede requerir que instalen las dependencias de herramientas relacionadas con Node.js.
+However, if you are targeting a CLI application to be consumed by the general public, regardless of their familiarity with JavaScript, or availability of this tooling, then distributing your CLI application only in the form of an install from the npm registry will be restricting. If your CLI application is intended to be used in a build or CI environment then those may also be required to install Node.js related toolchain dependencies.
 
-Hay muchas formas de empaquetar y distribuir un ejecutable, y prepararlo como un contenedor Docker que viene incluido con su aplicación CLI es una alternativa fácil de utilizar y sin dependencia (a parte de requerir un entorno Docker).
+There are many ways to package and distribute an executable, and containerizing it as a Docker container that is pre-bundled with your CLI application is an easily consumable alternative and dependency-free (aside of requiring a Docker environment).
 
 ### 4.2 Graceful degradation
 
-✅ **Haga:** Provee a los usuarios la posibilidad de optar entre una visualización con color y animaciones, como omitirla y proporcionar resultados en forma de JSON en entornos no compatibles.
+✅ **Do:** Provide users with the ability to opt-out of colorful and animation-rich display in unsupported environments, such as by skipping interactivity and providing formatted output in the form of JSON.
 
-❌ **De lo contrario:** Proveer de una salida con color, el uso de interactivos y otras interfaces enriquecidas en pantallas para los usuarios que no tienen un terminal compatible puede empeorar significativamente la experiencia del usuario final y que opten por no usar su aplicación CLI.
+❌ **Otherwise:** Having colorful output, using terminal interactive such as prompts and other display-rich interfaces may significantly degrade the end user experience for users not having a supported terminal and deter them away from using your CLI application.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Es común proporcionar una pantalla de terminal enriquecida en color, gráficos ascii o incluso animación en la terminal como un potente mecanismo de aviso. Estos pueden contribuir a una muy buena experiencia de usuario para aquellos que tienen un terminal compatible, sin embargo, puede mostrar texto ilegible o ser completamente inoperable para aquellos sin él.
+It is common to provide a rich terminal display in the form of colorful output, ascii charts, or even animation on the terminal and powerful prompt mechanism. These may contribute to a great user experience for those who have a supported terminal, however it may display garbled text or be completely inoperable for those without it.
 
-Para permitir que los usuarios con un terminal no compatible utilicen correctamente la aplicación Node.js CLI, puede optar por:
+To enable users with an unsupported terminal to properly use the Node.js CLI application, you may choose to:
 
-- Detecta automáticamente la capacidad del terminal y evaluar durante el tiempo de ejecución si diminuye la interactividad de la CLI.
-- Proporcione una opción para que los usuarios activen explícitamente esta opción, por ejemplo, proporcionando un argumento de línea de comandos `--json` para forzar la generación de datos en formato raw.
+- Auto-detect a terminal capability and evaluate during run-time whether to degrade the CLI interactivity
+- Provide an opt-in for users to explicitly toggle a graceful degradation, such as by providing a `--json` command line argument to force it to output raw data.
 
 ```
-👍  Consejo
+👍  Tip
 
-  Aportar la opción enriquecida en la salida como JSON no solo es útil para usuarios finales, también lo es para entornos de integración continua, además de permitir a los usuarios la capacidad de conectar la salida de su programa con la entrada de otro programa o exportar datos si fuera necesario.
+  Supporting graceful degradation such as JSON output isn't only useful for
+  end-users and their unuspported terminals, but is also valuable for running
+  in continuous integration environments, as well as enabling users
+  the ability to connect your program's output with other program's input or
+  export data if needed.
 ```
 
-### 4.3 Compatibilidad con las versiones de Node.js
+### 4.3 Node.js versions compatibility
 
-✅ **Haga:** Soporte y mantenimiento para las [versiones de Node.js](https://nodejs.org/en/about/releases).
+✅ **Do:** Target supported and maintained [Node.js versions](https://nodejs.org/en/about/releases).
 
-❌ **De lo contrario:** Será difícil que la base de código se mantenga compatible con versiones de Node.js anteriores, y perderá los beneficios del lenguaje y las características del runtime.
+❌ **Otherwise:** A code-base that tries to stay compatible with older and unsupported Node.js versions will be difficult to maintain, and lose the benefits of language and runtime features.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-A veces puede ser necesario apostar por versiones anteriores de Node.js específicas a las que les faltan nuevas características de ECAMScript. Por ejemplo, si está creando una CLI de Node.js que está orientada principalmente a DevOps o IT, es posible que no tengan un entorno Node.js ideal con una versión actualizada. Como referencia, Debian Stretch (oldstable) se genera con [Node.js 8.11.1](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=nodejs).
+Sometimes it may be necessary to specifically target older Node.js versions that are missing new ECAMScript features. For example, if you are building a Node.js CLI that is mostly geared towards DevOps or IT, they may not have an ideal Node.js environment with an up to date runtime. As a reference, Debian Stretch (oldstable) ships with [Node.js 8.11.1](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=nodejs).
 
-Si necesita trabajar con versiones antiguas de Node.js como Node.js 8, 6 o 4, quizás prefiera usar un transpilador como Babel para asegurarse de que el código generado cumpla con la versión del motor V8 JavaScript y el runtime de Node.js incluido con esas versiones.
+If you do need to target old versions of Node.js such as Node.js 8, 6 or 4, all of which are End of Life, prefer to use a transpiler such as Babel to make sure the generated code is compliant with the version of the V8 JavaScript engine and the Node.js run-time shipped with those versions.
 
-Otra solución es proporcionar una versión en un contenedor para evitar versiones antiguas. Vea la sección [(4.1) Contenedor para la CLI](#containerize-the-cli).
+Another workaround is to provide a containerized version of the CLI to avoid old targets. See Section [(4.1) Containerize the CLI](#containerize-the-cli).
 
-No trabaje el código de su programa pensando en una version específica del lenguaje ECMAScript anterior que coincida con versiones no mantenidas o EOL Node.js ya que esto solo conducirá a futuros problemas con el mantenimiento del código.
+Don't dumb down your program code to use an older ECMAScript language specification that matches unmaintained or EOL Node.js versions as this will only lead to code maintenance issues.
 
-Si se invoca la CLI en un entorno no compatible, intente detectarlo y muestre con un mensaje de error descriptivo con información. Vea [este ejemplo](https://github.com/lirantal/dockly/blob/42d8c09631bc5348f108a50c3ce9601851fb760b/index.js#L25) por dockly.
+If the CLI is invoked in an unsupported environment, attempt to detect it and exit with a descriptive error message to present a friendly and information error message. See [this example](https://github.com/lirantal/dockly/blob/42d8c09631bc5348f108a50c3ce9601851fb760b/index.js#L25) for dockly.
 
-### 4.4 Shebang para detectar de forma automática el runtime de Node.js
+### 4.4 Shebang autodetect the Node.js runtime
 
-✅ **Haga:** Utilice una referencia [Shebang](<https://en.wikipedia.org/wiki/Shebang_(Unix)>) para una instalación agnóstica que localice el tiempo de ejecución automáticamente el entorno de Node.js, como `#!/usr/bin/env node`.
+✅ **Do:** Use an installation-agnostic reference in your [Shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) declaration that locates the Node.js runtime automatically based on the runtime environment, such as `#!/usr/bin/env node`.
 
-❌ **De lo contrario:** Utilizar una ubicación de Node.js "hard-coded" como `#!/usr/local/bin/node` solo es específico de su propio entorno y puede hacer que la CLI de Node.js no funcione en otros entornos donde la ubicación de Node.js es diferente.
+❌ **Otherwise:** Using a hard-coded Node.js runtime location such as `#!/usr/local/bin/node` is only specific to your own environment and may render the Node.js CLI inoperable in other environments where the location of Node.js is different.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Puede ser normal comenzar a desarrollar una CLI de Node.js ejecutando el archivo de entrada `node cli.js` y agregar `#!/usr/local/bin/node` en el comienzo de `cli.js`, sin embargo, esto sigue siendo un enfoque erróneo ya que la ubicación del ejecutable de `node` no está garantizado para los entornos de otros usuarios.
+It may be an easy start to develop a Node.js CLI by running the entry point file as `node cli.js`, and later on adding `#!/usr/local/bin/node` to the top of the `cli.js` file, however the latter is still a flawed approach as that location of the `node` executable is not guaranteed for other users' environments.
 
-Cabe señalar que especificar `#!/usr/bin/env node` como la mejor práctica, sigue suponiendo que el runtime de Node.js sea como `node` y no `nodejs` o al contrario.
+It should be noted that specifying `#!/usr/bin/env node` as the best practice, is still making the assumption that the Node.js runtime is referenced as `node` and not `nodejs` or otherwise.
 
 # 5 Testing
 
-En esta sección:
+In this section:
 
-- 5.1 [No confíes en los locales](#51-put-no-trust-in-locales)
+- 5.1 [Put no trust in locales](#51-put-no-trust-in-locales)
 
-### 5.1 No confíes en los locales
+### 5.1 Put no trust in locales
 
-✅ **Haga:** No asuma que el texto de salida es equivalente a una cadena que usted piense porque las pruebas pueden ejecutarse en sistemas con configuraciones regionales diferentes a las suyas o con un inglés predeterminado.
+✅ **Do:** Don't assume output text to be equivalent to a string you assert for because tests may run on systems with different locales than yours, or the English default.
 
-❌ **De lo contrario:** Los desarrolladores experimentarán errores mientras realizan pruebas en sistemas con configuraciones regionales diferentes a las predeterminadas en inglés.
+❌ **Otherwise:** Developers will experience test failures as they test on systems with different locales than the English default.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-A medida que realize testing en una CLI ejecutándola y revisando la salida, puede buscar características específicas para asegurarse de que existan en la salida, como proporcionar ejemplos correctamente cuando la CLI se ejecuta sin argumentos. ej:
+As you choose to test the CLI by running it and parsing output, you may be inclined to grep for specific features to ensure that they exist in the output such as properly providing examples when the CLI is ran with no arguments. e.g:
 
 ```js
 const output = execSync(cli);
 expect(output).to.contain("Examples:"));
 ```
 
-Cuando las pruebas se ejecuten entornos con configuraciones regionales que no estén basadas en inglés, y si su análisis de argumentos CLI admite la detección automática de la configuraciones regionales, las pruebas como esta fallarán, debido a la posible conversión de `Examples` al idioma equivalente a la configuración regional que se establece predeterminada en el sistema.
+When tests will run on locales that aren't English-based, and if your CLI argument parsing library supports auto-detection of locales and adopting to it, then tests such as this will fail, due to language conversions from `Examples` to the locale-equivalent language being set as the default locale in the system.
 
-# 6 Errores
+# 6 Errors
 
-Esta sección trata las mejores prácticas relacionadas con la creación de una aplicación Node.js CLI y que esté disponible para los usuarios que desean consumirla pero que carecen de un entorno ideal para el cual el responsable la diseñó.
+This section deals with best practices concerned with making a Node.js CLI application available to users who wish to consume it but are lacking an ideal environment for which the maintainer designed the application.
 
-En esta sección:
+In essence, the goals of the best practices laid out in this section is to help users troubleshoot errors quickly and easily, without needing to consult documentation or source code to understand errors.
 
-- 6.1 [Errores informativos](#61-informational-errors)
-- 6.2 [Errores procesados](#62-actionable-errors)
-- 6.3 [Proporcionar el modo de depuración](#63-provide-debug-mode)
-- 6.4 [Uso adecuado de los códigos de salida.](#64-proper-use-of-exit-codes)
-- 6.5 [Informes de errores sin esfuerzo](#65-effortless-bug-reports)
+In this section:
 
-### 6.1 Errores informativos
+- 6.1 [Trackable errors](#61-trackable-errors)
+- 6.2 [Actionable errors](#62-actionable-errors)
+- 6.3 [Provide debug mode](#63-provide-debug-mode)
+- 6.4 [Proper use of exit codes](#64-proper-use-of-exit-codes)
+- 6.5 [Effortless bug reports](#65-effortless-bug-reports)
 
-✅ **Haga:** Al reportar errores, proporcione códigos de error rastreables que se puedan buscar en la documentación del proyecto y así simplificar la solución de problemas del mensaje de error.
+### 6.1 Trackable errors
 
-Si es posible, muestre de forma extendida los mensajes de error con información para que puedan analizarse fácilmente y con un contexto claro.
+✅ **Do:** When reporting errors, provide trackable error codes that can be looked up in the project's documentation and simplify troubleshooting the error message.
 
-❌ **De lo contrario:** Los mensajes de error genéricos tienden a ser ambiguos y dificultan que los usuarios busquen soluciones. Recorrer y analizar no es tan sencillo, y hacer referencia a ellos en la documentación tampoco es lo más claro.
+If possible, extend trackable error codes with further information so these can be easily parsed and context is clear.
 
-ℹ️ **Detalles**
+❌ **Otherwise:** Generic error messages tend to be ambiguous and make it hard for users to search for solutions. Parsing and analyzing isn't as straight-forward, and referencing them in documentation is not as clean either.
 
-Asegúrese de que, cuando se devuelvan mensajes de error, incluyan un número de referencia o códigos de error específicos que luego se puedan consultar. Al igual que los códigos de estado HTTP, las aplicaciones CLI requieren errores con nombre o códigos.
+ℹ️ **Details**
 
-Ejemplo:
+Ensure that, when error messages are returned, they include a reference number or specific error codes that can later be consulted. Much like HTTP status codes, so to do CLI applications require named or coded errors.
 
-```sh
-$ my-cli-tool --doSomething
-
-Error (E4002): please provide an API token via environment variables
-```
-
-### 6.2 Errores procesados
-
-✅ **Haga:** Un mensaje de error fallido debería indicarle al usuario qué se requiere como solución, en lugar de tan solo quejarse de que hay un error.
-
-❌ **De lo contrario:** Es posible que los usuarios que se enfrenten a mensajes de error, sin indicios de la acción a realizar para resolver el error, no puedan usar con éxito su aplicación CLI.
-
-ℹ️ **Detalles**
-
-Ejemplo:
+Example:
 
 ```sh
 $ my-cli-tool --doSomething
@@ -694,33 +697,49 @@ $ my-cli-tool --doSomething
 Error (E4002): please provide an API token via environment variables
 ```
 
-### 6.3 Proporcionar el modo de depuración
+### 6.2 Actionable errors
 
-✅ **Haga:** Permita que los usuarios avanzados habiliten información más detallada si necesitan diagnosticar problemas.
+✅ **Do:** A failing error message should tell the user what is required as a fix, rather than complaining that there is an error.
 
-❌ **De lo contrario:** No omita las opciones de depuración. Será más difícil recopilar feedback de los usuarios y determinar la causa de los errores.
+❌ **Otherwise:** Users facing error messages, with no hint of the action to resolve the error, may not be able to successfully use your CLI app.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Utilice variables de entorno, así como argumentos de línea de comandos para establecer la depuración y activar niveles de verbosidad. Donde tenga sentido en su código, coloque mensajes de depuración que ayuden al usuario y a los colaboradores a comprender el flujo del programa, las entradas y salidas y otras piezas de información que faciliten la resolución de problemas.
+Example:
 
-📦 **Paquetes recomendados**
+```sh
+$ my-cli-tool --doSomething
 
-Referencia a los paquetes Open Source para Node.js:
+Error (E4002): please provide an API token via environment variables
+```
+
+### 6.3 Provide debug mode
+
+✅ **Do:** Allow power users to enable more detailed information if they need to diagnose problems.
+
+❌ **Otherwise:** Don't skip debugging capabilities. It will be harder to collect feedback from users, and for them to pinpoint the cause of errors.
+
+ℹ️ **Details**
+
+Use environment variables as well as command line arguments to enable extended debug verbosity levels. Where it make sense in your code, plant debug messages that aid the user, and the maintainer, to understand the program flow, inputs and outputs, and other pieces of information that make problem solving easier.
+
+📦 **Recommended packages**
+
+Reference to Open Source Node.js packages:
 
 - [debug](https://www.npmjs.com/package/debug)
 
-### 6.4 Uso adecuado de los códigos de salida.
+### 6.4 Proper use of exit codes
 
-✅ **Haga:** Termine su programa con códigos de salida adecuados que transmitan un significado semántico del error o estado de salida.
+✅ **Do:** Terminate your program with proper exit codes that convey a semantic meaning of the error or exit status.
 
-❌ **De lo contrario:** Un código de salida incorrecto impedirá el uso de su CLI en flujos de integración continua y otros casos de uso de scripts de línea de comandos.
+❌ **Otherwise:** An incorrect or missing exit code will impede the use of your CLI in a continuous integration flows and other command line scripting use-cases.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Los scripts de la línea de comandos a menudo utilizan el `$?` del shell para determinar el código de estado de un programa y actuar sobre él. Esto también se utiliza en flujos de integración continua (CI) para determinar si un paso se completó con éxito o no.
+Command line scripts often make use of the shell's `$?` to infer a program's status code and act upon it. This is also utilized in continuous integration (CI) flows to determine whether a step completed successfully or not.
 
-Si su CLI siempre termina sin un código de estado específico, incluso en caso de errores, entonces el shell y otros programas que dependen de él no tienen forma de saberlo. Cuando ocurra un error como resultado al finalizar su programa, debe transmitirlo junto con su significado. Por ejemplo:
+If your CLI always terminates with no specific status code, even on errors, then the shell and other programs that rely upon it have no way of knowing this. When an error happens that results in your program's termination, you should convey this meaning. For example:
 
 ```js
 try {
@@ -732,40 +751,40 @@ try {
 }
 ```
 
-Una breve referencia para los códigos de salida:
+A short reference for exit codes:
 
-- el código de salida 0 transmite una ejecución exitosa
-- el código de salida 1 transmite una error
+- exit code 0 conveys a successful execution
+- exit code 1 conveys a failure
 
-También puede optar por utilizar códigos de salida personalizados con la semántica de su programa, pero si lo hace, asegúrese de documentarlos correctamente.
+You may also choose to use customized exit codes with semantics of your program, but if you do, be sure to document them properly.
 
-Referencia: Una [lista de códigos existentes](http://www.tldp.org/LDP/abs/html/exitcodes.html) usados por el BASH shell
+Reference: A [list of exit codes](http://www.tldp.org/LDP/abs/html/exitcodes.html) used by the BASH shell
 
-### 6.5 Informes de errores sin esfuerzo
+### 6.5 Effortless bug reports
 
-✅ **Haga:** Convierta el envío de informes de errores en una tarea sencilla proporcionando una URL para abrir una issue y rellenando previamente los datos necesarios tanto como sea posible. [Plantilla Issue de ejemplo, como en GitHub](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/configuring-issue-templates-for-your-repository), permite orientar a los los usuarios sobre qué información es necesaria.
+✅ **Do:** Make it an effortless task to submit bug reports by providing a URL to open an issue and prepopulating the required data as much as possible. [Issue templates, like on GitHub](https://docs.github.com/en/free-pro-team@latest/github/building-a-strong-community/configuring-issue-templates-for-your-repository), allow to further guide the users as to which information is necessary.
 
-❌ **De lo contrario:** Los usuarios se pueden sentir frustrados al buscar cómo informar un error y pueden terminar enviando poca información útil o incluso sin enviar ninguna issue.
+❌ **Otherwise:** Users get frustrated searching for how to report a bug and may end up with little helpful information, or not submitting an issue at all.
 
-# 7 Desarrollo
+# 7 Development
 
-Esta sección trata sobre las mejores prácticas de desarrollo y mantenimiento para construir una aplicación de línea de comando Node.js.
+This section deals with development and maintenance best practices of building a Node.js command line application.
 
-En esta sección:
+In this section:
 
-- 7.1 [Utilice un objeto bin](#71-use-a-bin-object)
-- 7.2 [Utilice rutas relativas](#72-use-relative-paths)
-- 7.3 [Utilice el campo `files`](#73-use-the-files-field)
+- 7.1 [Use a bin object](#71-use-a-bin-object)
+- 7.2 [Use relative paths](#72-use-relative-paths)
+- 7.3 [Use the files field](#73-use-the-files-field)
 
-### 7.1 Utilice un objeto bin
+### 7.1 Use a bin object
 
-✅ **Haga:** Utilice un objeto para definir el nombre del ejecutable y su ruta.
+✅ **Do:** Use an object to define the name of the executable and its path.
 
-❌ **De lo contrario:** Terminará acoplando el nombre del paquete con el ejecutable.
+❌ **Otherwise:** You will end up coupling the name of the package with the executable.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-El siguiente `package.json` muestra un ejemplo de desacoplamiento del nombre del ejecutable del nombre de archivo y su ubicación en el proyecto:
+The following `package.json` shows an example of decoupling the name of the executable from the filename and its location in the project:
 
 ```json
   "bin": {
@@ -773,29 +792,32 @@ El siguiente `package.json` muestra un ejemplo de desacoplamiento del nombre del
   }
 ```
 
-### 7.2 Utilice rutas relativas
+### 7.2 Use relative paths
 
-✅ **Haga:** Use `process.cwd()` para acceder a las rutas del usuario y use `__dirname` para acceder a las rutas del proyecto.
+✅ **Do:** Use `process.cwd()` to access user input paths and use `__dirname` to access project-based paths.
 
-❌ **De lo contrario:** Terminará con rutas de archivo incorrectas y no podrá acceder a ellos.
+❌ **Otherwise:** You will end up with incorrect file paths and won't be able to access files.
 
-ℹ️ **Detalles**
+ℹ️ **Details**
 
-Puede encontrarse con la necesidad de acceder a archivos dentro del alcance del proyecto, o acceder a los archivos que se proporcionan
-de la entrada del usuario, como log, archivos JSON u otros. Confundir el uso de `process.cwd()` o `__dirname` puede llevar a errores, además de no utilizar ninguno de ellos.
+You may find yourself with the need to access files within the project's files scope, or to access files that are provided from the user's input, such as log, JSON files or others. Confusing the use of `process.cwd()` or `__dirname` can lead to errors, as well as not using neither of them.
 
-Cómo acceder correctamente a los archivos:
+How to properly access files:
 
-- `process.cwd()`: utilícelo cuando la ruta del archivo al que necesita acceder dependa de la ubicación relativa de la CLI de Node.js. Un buen ejemplo es cuando la CLI admite rutas de archivo para crear registros, como: `myCli --outfile ../../out.json`. Si `myCli` está instalado en `/usr/local/node_modules/myCli/bin/myCli.js` entonces `process.cwd()` no se hará referencia a esa ubicación, sino al directorio de trabajo actual, que corresponde al directorio en el que se encuentre el usuario al ejecutar la CLI.
-- `__dirname`: utilícelo cuando necesite acceder a un archivo desde el código fuente de la CLI y refiérase a un archivo desde la ubicación relevante del archivo en el que se encuentra el código. Por ejemplo, cuando la CLI necesita acceder a datos de un archivo JSON archivo alojado en otro directorio: `fs.readFile(path.join(__dirname, '..', 'myDataFile.json'))`.
+- `process.cwd()`: use it when the file path that you need to access depends on the relative location of the Node.js CLI. A good example for this is when the CLI supports file paths to create logs, such as: `myCli --outfile ../../out.json`. If `myCli` is installed in `/usr/local/node_modules/myCli/bin/myCli.js` then `process.cwd()` will not refer to that location, but rather to the current working directory, which is whichever the directory the user is at when the CLI was invoked.
+- `__dirname`: use it when you need to access a file from within the CLI's source code and refer to a file from the relevant location of the file which the code lies in. For example, when the CLI needs to access a JSON data file in another directory: `fs.readFile(path.join(__dirname, '..', 'myDataFile.json'))`.
 
-### 7.3 Utilice el campo `files`
+### 7.3 Use the `files` field
 
-✅ **Haga:** Utilice el campo `files` para incluir solo los archivos necesarios en los paquetes que publique.
+✅ **Do:** Use `files` field to only include necessary files in your published packages.
 
-❌ **De lo contrario:** Terminará con un paquete que contiene archivos que pueden no ser necesarios para ejecutar su aplicación CLI. p.ej. (archivos de prueba, configuraciones de desarrollo, etc.)
+❌ **Otherwise:** You will end up with a package that contains files that may not be needed to run your CLI application. e.g. (test files, development configurations, etc.)
 
-ℹ️ **Detalles**
+ℹ️ **Details**
+
+To keep the published [package size small](#21-prefer-a-small-dependency-footprint), we should only include files that are required to run our CLI application. See this [post](https://medium.com/@nodejs/publishing-npm-packages-c4c615a0fc6b) for more details.
+
+The following `files` field tells the npm CLI to include all the files inside the src directory except the spec files.
 
 ```json
 "files": [
@@ -804,13 +826,56 @@ Cómo acceder correctamente a los archivos:
 ],
 ```
 
+# 8 Analytics
+
+This section deals with analytics collections in Node.js command line applications.
+
+In this section:
+
+- 8.1 [Strict Opt-in Analytics](#81-strict-opt-in-analytics)
+
+### 8.1 Strict Opt-in Analytics
+
+✅ **Do:** Always prompt, ask, or opt-in users in an explicit way to submit usage and product analytics to a remote location.
+
+❌ **Otherwise:** You risk privacy concerns for users and surprising CLI behavior which users wouldn't expect.
+
+ℹ️ **Details**
+
+Understandably, as a maintainer of a CLI application you would want to understand better how users are using it. However, stealthly and by-default "phone home" type of behavior without asking consent from users will be frawned upon.
+
+Guidelines:
+
+- Let the users know which data will be collected and what are you doing with it.
+- Be mindful about privacy concerns and collecting potentially personal identifyable information.
+- How, where and for which period of time is data stored.
+
+References for other CLIs which collect analytics are [Angular CLI](https://angular.io/analytics), and [Next.js](https://nextjs.org/telemetry) CLI.
+
+# 9 Appendix: CLI Frameworks
+
+### 9.1 CLI Frameworks Table
+
+| Name     | Description                                                                                                               | npm                                                   | GitHub                                                     | Stars and downloads                                                                                           |
+| -------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| oclif    | A framework for building a command line interface.                                                                        | [Link to npm](https://www.npmjs.com/package/oclif)    | [Link to GitHub](https://github.com/oclif/oclif)           | ![](https://img.shields.io/github/stars/oclif/oclif)![](https://img.shields.io/npm/dt/oclif.svg)              |
+| inquirer | A collection of common interactive command line user interfaces.                                                          | [Link to npm](https://www.npmjs.com/package/inquirer) | [Link to GitHub](https://github.com/SBoudrias/Inquirer.js) | ![](https://img.shields.io/github/stars/sboudrias/inquirer.js)![](https://img.shields.io/npm/dt/inquirer.svg) |
+| ink      | Ink provides the same component-based UI building experience that React offers in the browser, but for command-line apps. | [Link to npm](https://www.npmjs.com/package/ink)      | [Link to Github](https://github.com/vadimdemedes/ink)      | ![](https://img.shields.io/github/stars/vadimdemedes/ink)![](https://img.shields.io/npm/dt/ink.svg)           |
+| blessed  | A curses-like library with a high level terminal interface API for node.js.                                               | [Link to npm](https://www.npmjs.com/package/blessed)  | [Link to GitHub](https://github.com/chjj/blessed)          | ![](https://img.shields.io/github/stars/chjj/blessed)![](https://img.shields.io/npm/dt/blessed.svg)           |
+
+
+<!-- markdownlint-disable -->
+
+
+<!-- markdownlint-enable -->
+
 ---
 
-# Autor
+# Author
 
-**Node.js CLI Apps Best Practices** © [Liran Tal](https://github.com/lirantal), Lanzado bajo la licencia [CC BY-SA 4.0](./LICENSE).
+**Node.js CLI Apps Best Practices** © [Liran Tal](https://github.com/lirantal), Released under [CC BY-SA 4.0](./LICENSE) License.
 
-Este proyecto sigue las especificaciones de todos los [contribuyentes](https://github.com/all-contributors/all-contributors). ¡Cualquier contribución será bienvenidas!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 <!-- Project Logo -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -819,8 +884,8 @@ Este proyecto sigue las especificaciones de todos los [contribuyentes](https://g
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-# Licencia
+# License
 
 [![License](https://badgen.net/badge/License/CC%20BY-SA%204.0/green)](http://creativecommons.org/licenses/by-sa/4.0/)
 
-Este trabajo está bajo una licencia Creative Commons Attribution-ShareAlike 4.0 Licencia Internacional.
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
